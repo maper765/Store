@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Store.Domain.StoreContext 
+namespace Store.Domain.StoreContext.Entities
 {
     public class Order 
     {
@@ -10,7 +10,7 @@ namespace Store.Domain.StoreContext
         public DateTime CreateDate { get; set; }
         public string Status { get; set; }
         public IList<OrderItem> Items { get; set; }
-        public IList<Delivary> Delivaries { get; set; }
+        public IList<Delivery> Delivaries { get; set; }
 
         // To Place An Order
         public void Place()
