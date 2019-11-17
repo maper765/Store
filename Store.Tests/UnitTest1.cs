@@ -17,6 +17,7 @@ namespace Store.Tests
                 "14789-8585",
                 "Rua testando");
 
+            var order = new Order(c);
         }
     }
 }
