@@ -1,7 +1,7 @@
 ﻿using Store.Shared.Validator.Notifications;
 using Store.Shared.Validator.Validation;
 
-namespace Store.Domain.StroreContext.ValueObjects
+namespace Store.Domain.SharedContext.ValueObjects
 {
     public class Email : Notifiable
     {

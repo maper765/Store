@@ -1,5 +1,5 @@
-using Store.Domain.StroreContext.Entitites;
-using Store.Domain.StroreContext.ValueObjects;
+using Store.Domain.StoreContext.Entitites;
+using Store.Domain.SharedContext.ValueObjects;
 using Store.Shared.Validator.Notifications;
 using System.Collections.Generic;
 using System.Linq;

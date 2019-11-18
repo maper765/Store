@@ -1,4 +1,4 @@
-using Store.Domain.StroreContext.Enums;
+using Store.Domain.StoreContext.Enums;
 using Store.Shared.Validator.Notifications;
 using System;
 using System.Collections.Generic;

@@ -1,4 +1,4 @@
-using Store.Domain.StroreContext.Enums;
+using Store.Domain.StoreContext.Enums;
 using System;
 
 namespace Store.Domain.StoreContext.Entities

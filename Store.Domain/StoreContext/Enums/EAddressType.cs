@@ -1,4 +1,4 @@
-﻿namespace Store.Domain.StroreContext.Enums
+﻿namespace Store.Domain.StoreContext.Enums
 {
     public enum EAddressType
     {

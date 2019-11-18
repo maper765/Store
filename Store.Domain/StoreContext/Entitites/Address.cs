@@ -1,7 +1,7 @@
-﻿using Store.Domain.StroreContext.Enums;
+﻿using Store.Domain.StoreContext.Enums;
 using Store.Shared.Validator.Notifications;
 
-namespace Store.Domain.StroreContext.Entitites
+namespace Store.Domain.StoreContext.Entitites
 {
     public class Address : Notifiable
     {

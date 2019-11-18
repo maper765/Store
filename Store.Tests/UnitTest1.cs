@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Store.Domain.StoreContext.Entities;
-using Store.Domain.StroreContext.ValueObjects;
+using Store.Domain.SharedContext.ValueObjects;
 
 namespace Store.Tests
 {
