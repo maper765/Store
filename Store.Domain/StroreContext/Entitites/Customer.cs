@@ -1,11 +1,12 @@
 using Store.Domain.StroreContext.Entitites;
 using Store.Domain.StroreContext.ValueObjects;
+using Store.Shared.Validator.Notifications;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Store.Domain.StoreContext.Entities
 {
-    public class Customer 
+    public class Customer : Notifiable
     {
         private readonly IList<Address> _addresses;
 

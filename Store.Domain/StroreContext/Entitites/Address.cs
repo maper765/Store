@@ -1,8 +1,9 @@
 ﻿using Store.Domain.StroreContext.Enums;
+using Store.Shared.Validator.Notifications;
 
 namespace Store.Domain.StroreContext.Entitites
 {
-    public class Address
+    public class Address : Notifiable
     {
         public Address(
             string street,
