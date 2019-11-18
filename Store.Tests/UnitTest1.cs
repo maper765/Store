@@ -25,10 +25,10 @@ namespace Store.Tests
             var monitor = new Product("Monitor Ultra Wide", "Monitor 29'", "imag.png", 1009.90M, 1);
 
             var order = new Order(c);
-            order.AddItem(new OrderItem(teclado, 2));
-            order.AddItem(new OrderItem(mousePad, 2));
-            order.AddItem(new OrderItem(mouse, 2));
-            order.AddItem(new OrderItem(monitor, 2));
+            //order.AddItem(new OrderItem(teclado, 2));
+            //order.AddItem(new OrderItem(mousePad, 2));
+            //order.AddItem(new OrderItem(mouse, 2));
+            //order.AddItem(new OrderItem(monitor, 2));
 
             // Realizar pedido
             order.Place();
