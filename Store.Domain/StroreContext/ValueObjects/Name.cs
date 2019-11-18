@@ -7,7 +7,7 @@
             string lastName)
         {
             FirstName = firstName;
-            lastName = LastName;
+            LastName = lastName;
         }
 
         public string FirstName { get; private set; }
