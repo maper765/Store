@@ -38,14 +38,18 @@ namespace Store.Shared.Validator.Validation
 
         private bool _IsCpf(string cpf)
         {
+            cpf = cpf.Trim();
+            cpf = cpf.Replace(".", "").Replace("-", "");
+
+            if (cpf.Equals("00000000000")) return false;
+
             int[] multiplicador1 = new int[9] { 10, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplicador2 = new int[10] { 11, 10, 9, 8, 7, 6, 5, 4, 3, 2 };
             string tempCpf;
             string digito;
             int soma;
             int resto;
-            cpf = cpf.Trim();
-            cpf = cpf.Replace(".", "").Replace("-", "");
+
             if (cpf.Length != 11)
                 return false;
             tempCpf = cpf.Substring(0, 9);
@@ -74,14 +78,18 @@ namespace Store.Shared.Validator.Validation
 
         private bool _IsCnpj(string cnpj)
         {
+            cnpj = cnpj.Trim();
+            cnpj = cnpj.Replace(".", "").Replace("-", "").Replace("/", "");
+
+            if (cnpj.Equals("00000000000000")) return false;
+
             int[] multiplicador1 = new int[12] { 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             int[] multiplicador2 = new int[13] { 6, 5, 4, 3, 2, 9, 8, 7, 6, 5, 4, 3, 2 };
             int soma;
             int resto;
             string digito;
             string tempCnpj;
-            cnpj = cnpj.Trim();
-            cnpj = cnpj.Replace(".", "").Replace("-", "").Replace("/", "");
+
             if (cnpj.Length != 14)
                 return false;
             tempCnpj = cnpj.Substring(0, 12);

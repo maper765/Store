@@ -11,7 +11,7 @@ namespace Store.Tests
         public void TestMethod1()
         {
             var name = new Name("Mario", "Oliveira");
-            var document = new Document("12345678910");
+            var document = new Document("764644742720");
             var email = new Email("teste@email.com");
             var c = new Customer(
                 name,
